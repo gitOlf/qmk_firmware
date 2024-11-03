@@ -21,12 +21,15 @@ void matrix_scan_user(void) {
 #define QUICK_TAP_TERM_PER_KEY
 
 #define LAYER_1_KEYCODE LT(_LAYER_1, KC_BSPC)
+#define LAYER_2_KEYCODE LT(_LAYER_2, KC_BSPC)
 bool achordion_chord(uint16_t tap_hold_keycode,
                      keyrecord_t* tap_hold_record,
                      uint16_t other_keycode,
                      keyrecord_t* other_record) {
     switch (tap_hold_keycode) {
         case LAYER_1_KEYCODE:
+            return true;
+        case LAYER_2_KEYCODE:
             return true;
 
     }
@@ -63,7 +66,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_LAYER_2] = LAYOUT_split_3x6_3(
         KC_NO, KC_NO,    KC_1,    KC_2,    KC_3,    KC_NO,                                                             KC_NO,    KC_NO,             KC_NO,             KC_NO,            KC_NO,             KC_NO,
         KC_NO, KC_NO,    KC_4,    KC_5,    KC_6,    KC_NO,                                                             KC_NO,    LSFT_T(KC_DOT),    LCTL_T(KC_COMM),   LALT_T(KC_MINUS), LGUI_T(KC_PLUS),   KC_NO,
-        KC_NO, KC_NO,    KC_7,    KC_8,    KC_9,    KC_NO,                                                             KC_NO,    KC_NO,             KC_NO,             QK_BOOT,          KC_NO,             KC_NO,
+        KC_NO, KC_NO,    KC_7,    KC_8,    KC_9,    KC_NO,                                                             KC_NO,    KC_NO,             KC_NO,             KC_NO,            KC_NO,             KC_NO,
                      KC_0, KC_LSFT, LT(_LAYER_3, KC_DEL),                                                              KC_NO,    KC_NO,             KC_NO
     ),
     [_LAYER_3] = LAYOUT_split_3x6_3(
