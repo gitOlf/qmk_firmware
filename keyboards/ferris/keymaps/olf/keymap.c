@@ -58,16 +58,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                            KC_LSFT,           LT(_LAYER_1, KC_BSPC),                           LT(_LAYER_2, KC_ENTER),  LCTL_T(KC_SPACE)
     ),
     [_LAYER_1] = LAYOUT_split_3x5_2(
-        KC_EXLM,        KC_AT,           KC_HASH,          KC_DLR,            KC_PERC,                          KC_CIRC, KC_AMPR, KC_ASTR,   KC_MINUS, KC_PLUS,
-        LGUI_T(KC_GRV), LALT_T(KC_EQL),  LCTL_T(KC_LBRC),  LSFT_T(KC_RBRC),   KC_LCBR,                          KC_LPRN, KC_LEFT, KC_DOWN,   KC_UP,    KC_RIGHT,
-        KC_TILD,        KC_NO,           KC_UNDS,          KC_NO,             KC_RCBR,                          KC_RPRN, KC_PIPE, KC_BSLS,   KC_QUES,  KC_SLSH,
+        KC_EXLM,        KC_AT,           KC_HASH,          KC_DLR,            KC_PERC,                          KC_CIRC, KC_AMPR,        KC_ASTR,         KC_MINUS,      KC_PLUS,
+        LGUI_T(KC_GRV), LALT_T(KC_EQL),  LCTL_T(KC_LBRC),  LSFT_T(KC_RBRC),   KC_LCBR,                          KC_LPRN, LSFT_(KC_LEFT), LCTL_T(KC_DOWN), LALT_T(KC_UP), LGUI_T(KC_RIGHT),
+        KC_TILD,        KC_NO,           KC_UNDS,          KC_NO,             KC_RCBR,                          KC_RPRN, KC_PIPE,        KC_BSLS,         KC_QUES,       KC_SLSH,
                                                            KC_LSFT,           KC_NO,                            LT(_LAYER_3, KC_ESC),  LCTL_T(KC_TAB)
     ),
     [_LAYER_2] = LAYOUT_split_3x5_2(
         KC_NO,    KC_1,    KC_2,    KC_3,    KC_NO,                                                             KC_NO,    KC_NO,             KC_NO,             KC_NO,            KC_NO,
         KC_NO,    KC_4,    KC_5,    KC_6,    KC_NO,                                                             KC_NO,    LSFT_T(KC_DOT),    LCTL_T(KC_COMM),   LALT_T(KC_MINUS), LGUI_T(KC_PLUS),
         KC_NO,    KC_7,    KC_8,    KC_9,    KC_NO,                                                             KC_NO,    KC_NO,             KC_NO,             KC_NO,            KC_NO,
-                        KC_0, LT(_LAYER_3, KC_DEL),                                                       KC_NO,    KC_NO
+                        KC_0, LT(_LAYER_3, KC_DEL),                                                             KC_NO,    KC_NO
     ),
     [_LAYER_3] = LAYOUT_split_3x5_2(
         KC_NO,           KC_F1,          KC_F2,            KC_F3,              KC_F10,                           KC_NO,    KC_NO,             KC_NO,            KC_NO,            KC_NO,
