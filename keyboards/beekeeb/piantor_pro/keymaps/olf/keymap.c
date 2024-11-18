@@ -58,9 +58,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                  KC_NO,           KC_LSFT,           LT(_LAYER_1, KC_BSPC),           LT(_LAYER_2, KC_ENTER),  LCTL_T(KC_SPACE), KC_NO
     ),
     [_LAYER_1] = LAYOUT_split_3x6_3(
-        KC_NO, KC_EXLM,        KC_AT,           KC_HASH,          KC_DLR,            KC_PERC,                          KC_CIRC, KC_AMPR,         KC_ASTR,         KC_MINUS,      KC_PLUS,          KC_NO,
-        KC_NO, LGUI_T(KC_GRV), LALT_T(KC_EQL),  LCTL_T(KC_LBRC),  LSFT_T(KC_RBRC),   KC_LCBR,                          KC_LPRN, LSFT_T(KC_LEFT), LCTL_T(KC_DOWN), LALT_T(KC_UP), LGUI_T(KC_RIGHT), KC_NO,
-        KC_NO, KC_TILD,        KC_NO,           KC_UNDS,          KC_NO,             KC_RCBR,                          KC_RPRN, KC_PIPE,         KC_BSLS,         KC_QUES,       KC_SLSH,          KC_NO,
+        KC_NO, KC_EXLM,        KC_AT,           KC_HASH,          KC_DLR,            KC_PERC,                          KC_CIRC, KC_AMPR,         KC_ASTR,         KC_MINUS,      KC_PLUS,            KC_NO,
+        KC_NO, LGUI_T(KC_GRV), LALT_T(KC_EQL),  LCTL_T(KC_LBRC),  LSFT_T(KC_RBRC),   KC_LCBR,                          KC_LEFT, LSFT_T(KC_DOWN), LCTL_T(KC_UP),   LALT_T(KC_RIGHT), LGUI_T(KC_BSLS), KC_NO,
+        KC_NO, KC_TILD,        KC_UNDS,         KC_LABK,          KC_RABK,           KC_RCBR,                          KC_LPRN, KC_RPRN,         KC_PIPE,         KC_QUES,       KC_SLSH,            KC_NO,
                                       KC_NO, KC_LSFT, KC_NO,                                                           LT(_LAYER_3, KC_ESC),  LCTL_T(KC_TAB),  KC_NO
     ),
     [_LAYER_2] = LAYOUT_split_3x6_3(
